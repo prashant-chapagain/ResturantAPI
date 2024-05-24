@@ -12,6 +12,9 @@ public class OrderMaster
     public string OrderNumber { get; set; }
     public int CustomerId { get; set; }
 
+    public Customer Customer { get; set; }
+
+
     [Column(TypeName = "nvarchar(30)")]
     public string PaymentMethod { get; set; }
     public decimal GrandTotal { get; set; }

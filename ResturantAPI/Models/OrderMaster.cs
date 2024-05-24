@@ -18,4 +18,6 @@ public class OrderMaster
     [Column(TypeName = "nvarchar(30)")]
     public string PaymentMethod { get; set; }
     public decimal GrandTotal { get; set; }
+    public List<OrderDetail> OrderDetails { get; set; }
+
 }
